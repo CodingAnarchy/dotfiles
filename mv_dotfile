@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby -w
+
+require 'fileutils'
+
+puts "Enter the original dotfile source:"
+src = gets.chomp
+
+puts "Enter the associated topic:"
+topic = gets.chomp
+
+topic_dir = "#{Dir.home}/.dotfiles/#{topic}"
+FileUtils.mkdir_p(topic_dir)
+FileUtils.cp("#{Dir.home}/#{src}", topic_dir)
+FileUtils.ln_sf("#{Dir.home}/#{src}", "#{topic_dir}/#{src}")

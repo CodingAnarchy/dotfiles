@@ -180,6 +180,7 @@ brew 'gperftools'
 brew 'gpgme'
 brew 'graphicsmagick'
 brew 'handbrake'
+brew 'htop', args: ['with-ncurses']
 brew 'hub'
 brew 'perl'
 brew 'imagemagick'

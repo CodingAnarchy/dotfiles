@@ -55,14 +55,10 @@ set mouse=a
 set autoindent "indent if previous line is indented
 set smartindent "indent after brackets
 set backspace=2
-set tabstop=2
-set expandtab
-set softtabstop=2
-set shiftwidth=2
-set smarttab
+set tabstop=2 expandtab softtabstop=2 shiftwidth=2 smarttab
 set number "enables line numbering
 set shell=bash
-
+set splitright splitbelow
 let g:rspec_runner = "os_x_iterm"
 
 autocmd filetype crontab setlocal nobackup nowritebackup

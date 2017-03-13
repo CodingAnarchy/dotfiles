@@ -75,3 +75,6 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Syntax highlighting for *.prawn files
+au BufNewFile,BufRead *.prawn set filetype=ruby

@@ -1,3 +1,5 @@
+scriptencoding utf-8
+set encoding=utf-8
 set nocompatible              " be iMproved, required
 set laststatus=2
 filetype off                  " required
@@ -10,6 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
+Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
@@ -60,6 +63,10 @@ set number "enables line numbering
 set shell=bash
 set splitright splitbelow
 let g:rspec_runner = "os_x_iterm"
+
+"Autocompletion stuff
+set wildmenu
+set wildmode=longest:list,full
 
 autocmd filetype crontab setlocal nobackup nowritebackup
 autocmd StdinReadPre * let s:std_in=1

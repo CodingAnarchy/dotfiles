@@ -55,11 +55,13 @@ if has('mouse_sgr')
 endif
 
 set mouse=a
+set clipboard=unnamed
 set autoindent "indent if previous line is indented
 set smartindent "indent after brackets
 set backspace=2
 set tabstop=2 expandtab softtabstop=2 shiftwidth=2 smarttab
 set number "enables line numbering
+set relativenumber "enables relative line numbering
 set shell=bash
 set splitright splitbelow
 let g:rspec_runner = "os_x_iterm"
@@ -99,3 +101,12 @@ map  N <Plug>(easymotion-prev)
 
 " Syntax highlighting for *.prawn files
 au BufNewFile,BufRead *.prawn set filetype=ruby
+
+" Use ag (the_silver_searcher) for the ack program
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+  cnoreabbrev ag Ack
+  cnoreabbrev aG Ack
+  cnoreabbrev Ag Ack
+  cnoreabbrev AG Ack
+endif

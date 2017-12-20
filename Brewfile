@@ -1,321 +1,44 @@
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
-tap 'cheba/rust-nightly'
-tap 'ethereum/ethereum'
-tap 'homebrew/boneyard'
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'homebrew/dupes'
-tap 'homebrew/python'
-tap 'homebrew/science'
-tap 'homebrew/services'
-tap 'homebrew/versions'
-tap 'petere/postgresql'
-tap 'staticfloat/julia'
-cask 'xquartz'
-brew 'archey'
-brew 'argtable'
-brew 'aria2'
-brew 'docbook'
-brew 'asciidoc'
-brew 'openssl'
-brew 'asio'
-brew 'aspell'
-brew 'gettext'
-brew 'libffi'
-brew 'pcre'
-brew 'glib'
-brew 'libpng'
-brew 'freetype'
-brew 'fontconfig'
-brew 'pixman'
-brew 'cairo'
-brew 'git'
-brew 'pkg-config'
-brew 'gobject-introspection'
-brew 'atk'
-brew 'gdbm'
-brew 'readline'
-brew 'sqlite'
-brew 'python'
-brew 'libxml2', args: ['with-python']
-brew 'augeas'
-brew 'autoconf'
-brew 'bdw-gc'
-brew 'gmp'
-brew 'libtool'
-brew 'libunistring'
-brew 'guile'
-brew 'autogen'
-brew 'automake'
-brew 'base64'
-brew 'bash'
-brew 'bison'
-brew 'boost', args: ['c++11', 'with-icu4c', 'with-mpi', 'without-single']
-brew 'xz'
-brew 'python3'
-brew 'boost-python'
-brew 'cdiff'
-brew 'cloc'
-brew 'cmake'
-brew 'coreutils'
-brew 'cppcheck'
-brew 'cppunit'
-brew 'cryptopp'
-brew 'libevent'
-brew 'libyaml'
-brew 'llvm'
-brew 'crystal-lang'
-brew 'curl'
-brew 'dbus'
-brew 'dialog'
-brew 'libgpg-error'
-brew 'libassuan'
-brew 'libgcrypt'
-brew 'libksba'
-brew 'pth'
-brew 'dirmngr'
-brew 'jpeg'
-brew 'libtiff'
-brew 'djvulibre'
-brew 'docker'
-brew 'dos2unix'
-brew 'doxygen', args: ['with-graphviz']
-brew 'pinentry'
-brew 'gpg-agent'
-brew 'libusb'
-brew 'libusb-compat'
-brew 'gnupg2'
-brew 'popt'
-brew 'librsync'
-brew 'openssl@1.1'
-brew 'duplicity'
-brew 'e2fsprogs'
-brew 'eigen'
-brew 'emacs'
-brew 'enchant'
-brew 'little-cms2'
-brew 'ghostscript'
-brew 'epstool'
-brew 'wxmac'
-brew 'erlang'
-brew 'gnome-icon-theme'
-brew 'shared-mime-info'
-brew 'gdk-pixbuf'
-brew 'gsettings-desktop-schemas'
-brew 'hicolor-icon-theme'
-brew 'libepoxy'
-brew 'icu4c'
-brew 'harfbuzz'
-brew 'pango'
-brew 'gtk+3'
-brew 'libsecret'
-brew 'libspectre'
-brew 'openjpeg'
-brew 'poppler'
-brew 'evince'
-brew 'fdupes'
-brew 'lame'
-brew 'x264'
-brew 'xvid'
-brew 'ffmpeg'
-brew 'isl'
-brew 'mpfr'
-brew 'libmpc'
-brew 'gcc', args: ['without-multilib']
-brew 'open-mpi'
-brew 'fftw'
-brew 'findutils', args: ['with-default-names']
-brew 'pcre2'
-brew 'fish'
-brew 'fsevents-tools'
-brew 'webp'
-brew 'gd'
-brew 'gdb'
-brew 'gtk+'
-brew 'py2cairo'
-brew 'pygobject'
-brew 'pygtk'
-brew 'gtk-mac-integration'
-brew 'iso-codes'
-brew 'vala'
-brew 'gspell'
-brew 'gtksourceview3'
-brew 'libpeas'
-brew 'gedit'
-brew 'gflags'
-brew 'giflib'
-brew 'libtasn1'
-brew 'nettle'
-brew 'p11-kit'
-brew 'gnutls'
-brew 'gsasl'
-brew 'libidn'
-brew 'libmagic'
-brew 'lua'
-brew 'libquvi'
-brew 'quvi'
-brew 'graphviz'
-brew 'xdot'
-brew 'git-annex'
-brew 'git-cal'
-brew 'git-lfs'
-brew 'git-secret'
-brew 'git-subrepo'
-brew 'git-test'
-brew 'gitlab-ci-multi-runner'
-brew 'mono'
-brew 'gitversion'
-brew 'gl2ps'
-brew 'glog'
-brew 'gnu-getopt'
-brew 'gnu-prolog'
-brew 'gnu-sed', args: ['with-default-names']
-brew 'gnupg'
-brew 'gnuplot', args: ['with-cairo']
-brew 'go'
-brew 'godep'
-brew 'gperftools'
-brew 'gpgme'
-brew 'graphicsmagick'
-brew 'handbrake'
-brew 'htop', args: ['with-ncurses']
-brew 'hub'
-brew 'perl'
-brew 'imagemagick'
-brew 'jbig2dec'
-brew 'jsoncpp'
-brew 'keychain'
-brew 'ledger'
-brew 'snappy'
-brew 'leveldb'
-brew 'libcroco'
-brew 'libssh2'
-brew 'libgit2'
-brew 'libglade'
-brew 'libmicrohttpd'
-brew 'libjson-rpc-cpp'
-brew 'libotr'
-brew 'libressl'
-brew 'librsvg'
-brew 'libvo-aacenc'
-brew 'llvm@3.7'
-brew 'luajit'
-brew 'lynx'
-brew 'lz4'
-brew 'mas'
-brew 'mbedtls'
-brew 'md5sha1sum'
-brew 'miniupnpc'
-brew 'msgpack'
-brew 'mycli'
-brew 'ninja'
-brew 'nmap'
-brew 'node'
-brew 'rocksdb'
-brew 'sleuthkit'
-brew 'yara'
-brew 'osquery'
-brew 'p7zip'
-brew 'ttfautohint'
-brew 'pdf2htmlex'
-brew 'pidgin'
-brew 'plotutils'
-brew 'ponyc'
-brew 'postgresql', restart_service: true
-brew 'progress'
-brew 'pstoedit'
-brew 'pv'
-brew 'qt@5.7'
-brew 'sip', args: ['with-python3']
-brew 'pyqt5'
-brew 'qscintilla2'
-brew 'qt5'
-brew 'redis', restart_service: true
-brew 'rename'
-brew 'ruby'
-brew 'rust'
-brew 'sloccount'
-brew 'stormssh'
-brew 'swiftlint'
-brew 'swig'
-brew 'szip'
-brew 'tbb'
-brew 'texinfo'
-brew 'the_platinum_searcher'
-brew 'the_silver_searcher'
-brew 'thefuck'
-brew 'thrift'
-brew 'uncrustify'
-brew 'unixodbc'
-brew 'unrar'
-brew 'vim'
-brew 'watchman'
-brew 'wget'
-brew 'wxpython'
-brew 'yasm'
-brew 'youtube-dl'
-brew 'zpaq'
-brew 'zsh'
-brew 'homebrew/boneyard/libtorrent'
-brew 'homebrew/dupes/grep', args: ['with-default-names']
-brew 'homebrew/dupes/less'
-brew 'homebrew/dupes/make'
-brew 'homebrew/dupes/ncurses'
-brew 'homebrew/dupes/nano'
-brew 'homebrew/dupes/openldap'
-brew 'homebrew/dupes/openssh'
-brew 'homebrew/dupes/rsync'
-brew 'homebrew/dupes/tcl-tk'
-brew 'homebrew/dupes/whois'
-brew 'homebrew/science/veclibfort'
-brew 'homebrew/science/arpack'
-brew 'homebrew/science/boost-compute'
-brew 'homebrew/science/glpk'
-brew 'homebrew/science/hdf5'
-brew 'homebrew/science/metis'
-brew 'homebrew/science/netcdf'
-brew 'homebrew/science/openblas'
-brew 'homebrew/science/qhull'
-brew 'homebrew/science/qrupdate'
-brew 'homebrew/science/r', args: ['with-openblas']
-brew 'homebrew/science/suite-sparse'
-brew 'staticfloat/julia/openblas-julia'
-brew 'staticfloat/julia/arpack-julia'
-brew 'staticfloat/julia/llvm37-julia'
-brew 'staticfloat/julia/suite-sparse-julia'
-brew 'staticfloat/julia/julia'
-cask 'disk-inventory-x'
-cask 'font-anonymous-pro'
-cask 'font-hack'
-cask 'font-roboto'
-cask 'google-chrome'
-cask 'icecat'
-cask 'imageoptim'
-cask 'java6'
-cask 'keybase'
-cask 'openemu'
-cask 'spotify'
-cask 'steam'
-cask 'tcl'
-cask 'texmaker'
-cask 'torbrowser'
-cask 'vlc'
-mas '1Password', id: 443987910
-mas 'Caffeine', id: 411246225
-mas 'CoinBar', id: 957162288
-mas 'GarageBand', id: 682658836
-mas 'iBooks Author', id: 490152466
-mas 'iMovie', id: 408981434
-mas 'Keynote', id: 409183694
-mas 'Kindle', id: 405399194
-mas 'LastPass', id: 926036361
-mas 'Monity', id: 915542151
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
-mas 'Scrivener', id: 418889511
-mas 'Slack', id: 803453959
-mas 'Twitter', id: 409789998
-mas 'Ulysses', id: 623795237
-mas 'Xcode', id: 497799835
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/services"
+brew "git"
+brew "pkg-config"
+brew "autoconf"
+brew "automake"
+brew "bash"
+brew "coffeescript"
+brew "coreutils"
+brew "crystal-lang"
+brew "evince"
+brew "findutils", args: ["with-default-names"]
+brew "fish"
+brew "git-lfs"
+brew "gnu-indent", args: ["with-default-names"]
+brew "gnu-sed", args: ["with-default-names"]
+brew "gnu-tar", args: ["with-default-names"]
+brew "gnu-which", args: ["with-default-names"]
+brew "gnupg"
+brew "gpg-agent"
+brew "grep", args: ["with-default-names"]
+brew "gzip"
+brew "htop"
+brew "hub"
+brew "libtool"
+brew "imagemagick"
+brew "keychain"
+brew "less"
+brew "lua"
+brew "make", args: ["with-default-names"]
+brew "openssl@1.1"
+brew "pinentry-mac"
+brew "postgresql", restart_service: true
+brew "redis", restart_service: true
+brew "rsync"
+brew "screen"
+brew "the_silver_searcher"
+brew "thefuck"
+brew "unzip"
+brew "vim", args: ["with-override-system-vi"]
+brew "watch"
+brew "wget"
+brew "whois"

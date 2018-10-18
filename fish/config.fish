@@ -4,6 +4,7 @@ set -x PATH ~/.rvm/gems/ruby-2.4.1/bin /usr/local/opt/coreutils/libexec/gnubin /
 set -x MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH
 set -x EDITOR vim
 source {$HOME}/.github
+set -x GPG_TTY (tty)
 set -e fish_greeting
 
 if [ -f /usr/share/autojump/autojump.fish ]

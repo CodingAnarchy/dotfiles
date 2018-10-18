@@ -6,7 +6,6 @@
 [user]
 	name = Matt Tanous
 	email = mtanous22@gmail.com
-	signingkey = 5D78AD912167F70C
 [push]
 	default = current
 [color]
@@ -46,7 +45,7 @@
 	fa = fetch --all
 	b = branch
 	ls = log --pretty=format:\"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]\" --decorate
-	bclean = !git branch --merged 'master' | egrep -v '(^\\*|master)' | xargs -r git branch -d
+	bclean = !git branch --merged 'develop' | egrep -v '(^\\*|master)' | xargs -r git branch -d
 	ll = ls --numstat
 	lnc = log --pretty=format:\"%h %s [%cn]\"
 	lds = log --pretty=format:\"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]\" --decorate --date=short
@@ -62,8 +61,6 @@
 [color "diff"]
 	old = red strike
 	new = green italic
-[commit]
-	gpgsign = true
 [web]
 	browser = open
 [diff]
@@ -75,5 +72,3 @@
 [mergetool "diffmerge"]
 	trustExitCode = true
 	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-[gpg]
-	program = gpg

@@ -34,6 +34,9 @@ Plugin 'sjl/gundo.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 
@@ -65,6 +68,7 @@ set relativenumber "enables relative line numbering
 set shell=bash
 set splitright splitbelow
 let g:rspec_runner = "os_x_iterm"
+let g:jsx_ext_required = 0
 
 "Autocompletion stuff
 set wildmenu

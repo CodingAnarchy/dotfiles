@@ -35,8 +35,9 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-editors/vim-elixir'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+" Plugin 'pangloss/vim-javascript'
+Plugin 'chemzqm/vim-jsx-improve'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 

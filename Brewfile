@@ -19,20 +19,19 @@ brew "elm"
 brew "libtool"
 brew "evince"
 brew "ffmpeg"
-brew "findutils", args: ["with-default-names"]
+brew "findutils"
 brew "fish"
 brew "gdb"
 brew "gist"
 brew "git"
 brew "git-lfs"
-brew "gnu-indent", args: ["with-default-names"]
-brew "gnu-sed", args: ["with-default-names"]
+brew "gnu-indent"
+brew "gnu-sed"
 brew "gnu-tar"
-brew "gnu-which", args: ["with-default-names"]
+brew "gnu-which"
 brew "pinentry"
 brew "gnupg"
 brew "go"
-brew "gpg-agent"
 brew "gzip"
 brew "htop"
 brew "hub"
@@ -40,7 +39,7 @@ brew "imagemagick"
 brew "keychain"
 brew "less"
 brew "lua"
-brew "make", args: ["with-default-names"]
+brew "make"
 brew "mysql", restart_service: true
 brew "nvm"
 brew "openssl@1.1"

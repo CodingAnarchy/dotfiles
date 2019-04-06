@@ -55,9 +55,9 @@
 	dlc = diff --cached HEAD^
 [core]
 	editor = vim
-	excludesfile = /Users/vision/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [init]
-	templatedir = /Users/vision/.git-templates
+	templatedir = ~/.git-templates
 [color "diff"]
 	old = red strike
 	new = green italic

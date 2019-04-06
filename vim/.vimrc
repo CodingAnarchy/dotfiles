@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
+Plugin 'dag/vim-fish'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
@@ -42,7 +43,7 @@ Plugin 'chemzqm/vim-jsx-improve'
 " Plugin 'L9'
 
 call vundle#end()            " required
-syntax on
+syntax enable
 filetype plugin indent on    " required
 "
 " Brief help
@@ -70,6 +71,11 @@ set shell=bash
 set splitright splitbelow
 let g:rspec_runner = "os_x_iterm"
 let g:jsx_ext_required = 0
+
+" Set up :make to use fish for syntax checking
+autocmd FileType fish compiler fish
+autocmd FileType fish setlocal textwidth=79
+autocmd FileType fish setlocal foldmethod=expr
 
 "Autocompletion stuff
 set wildmenu

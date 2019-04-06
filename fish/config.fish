@@ -1,7 +1,6 @@
 set -x SHELL /usr/local/bin/fish
 set -x GOPATH $HOME/.go
-set -x NVM_DIR ~/.nvm
-set -x PATH ~/.rvm/gems/ruby-2.5.3/bin /usr/local/opt/coreutils/libexec/gnubin /usr/local/sbin $PATH ~/bin
+set -x PATH /usr/local/opt/coreutils/libexec/gnubin /usr/local/sbin $PATH ~/bin
 set -x MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH
 set -x EDITOR vim
 source {$HOME}/.github
@@ -22,7 +21,7 @@ keychain --eval id_rsa > /dev/null ^ /dev/null
 start_ssh_agent
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
-nvm use default --silent
-rvm use default
+#nvm use default --silent
 
 brew command command-not-found-init > /dev/null 2>&1; and . (brew command-not-found-init)
+status --is-interactive; and source (rbenv init -|psub)

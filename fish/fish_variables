@@ -5,6 +5,7 @@ SETUVAR __fish_init_3_x:\x1d
 SETUVAR _fish_abbr_a2reload:sudo\x20service\x20apache2\x20reload
 SETUVAR _fish_abbr_a2restart:sudo\x20service\x20apache2\x20restart
 SETUVAR _fish_abbr_add__to__path:set\x20\x2dU\x20fish_user_paths\x20\x24fish_user_paths
+SETUVAR _fish_abbr_blue:kubectl\x20config\x20use\x2dcontext\x20blue\x2eredcanary\x2eio
 SETUVAR _fish_abbr_freebox__mount:sudo\x20mount\x20\x2dt\x20cifs\x20//mafreebox\x2efreebox\x2efr/Disque\x5c\x20dur\x20/media/freebox\x20\x2do\x20user\x3dfreebox\x2cuid\x3d1000\x2cgid\x3d1000\x2crw\x2cpassword\x3d
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
@@ -17,7 +18,10 @@ SETUVAR _fish_abbr_gi:gitignore
 SETUVAR _fish_abbr_gm:git\x20merge
 SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gps:git\x20push
+SETUVAR _fish_abbr_gray:kubectl\x20config\x20use\x2dcontext\x20gray\x2eredcanary\x2eio
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_k_2D_new:brew\x20switch\x20kubernetes\x2dcli\x201\x2e14\x2e0
+SETUVAR _fish_abbr_k_2D_old:brew\x20switch\x20kubernetes\x2dcli\x201\x2e9\x2e6
 SETUVAR _fish_abbr_l:ls
 SETUVAR _fish_abbr_ni:npm\x20install\x20\x2d\x2dsave\x2ddev
 SETUVAR _fish_abbr_nig:npm\x20install\x20\x2dg
@@ -26,6 +30,7 @@ SETUVAR _fish_abbr_np:npm\x20prune
 SETUVAR _fish_abbr_nr:npm\x20remove
 SETUVAR _fish_abbr_nu:npm\x20update
 SETUVAR _fish_abbr_pg:pgrep\x20\x2dl
+SETUVAR _fish_abbr_purple:kubectl\x20config\x20use\x2dcontext\x20purple\x2erecanary\x2eio\x2daws
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -47,6 +52,7 @@ SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline

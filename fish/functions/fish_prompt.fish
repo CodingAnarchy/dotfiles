@@ -46,7 +46,7 @@ function byscripts_prompt_cwd
 end
 
 function _rb_prompt
-  echo (ruby --version | awk '{print $2}' | cut -d 'p' -f1)
+  echo (ruby --version | awk -v OFS=" " '{print $1, $2}' | cut -d 'p' -f1)
 end
 
 function byscripts_prompt_ruby

@@ -24,4 +24,3 @@ start_ssh_agent
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
 brew command command-not-found-init > /dev/null 2>&1; and . (brew command-not-found-init)
-rvm default

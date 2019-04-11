@@ -17,11 +17,10 @@ abbr gc 'git clone'
 abbr gd 'git diff'
 
 # Kubernetes
-abbr blue 'kubectl config use-context blue.redcanary.io'
-abbr gray 'kubectl config use-context gray.redcanary.io'
 abbr purple 'kubectl config use-context purple.recanary.io-aws'
-abbr k-old 'brew switch kubernetes-cli 1.9.6'
-abbr k-new 'brew switch kubernetes-cli 1.14.0'
+
+# HTTPie
+abbr https 'http --default-scheme=https'
 
 # LS
 abbr l 'ls'

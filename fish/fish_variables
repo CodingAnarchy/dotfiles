@@ -20,6 +20,7 @@ SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gps:git\x20push
 SETUVAR _fish_abbr_gray:kubectl\x20config\x20use\x2dcontext\x20gray\x2eredcanary\x2eio
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_https:http\x20\x2d\x2ddefault\x2dscheme\x3dhttps
 SETUVAR _fish_abbr_k_2D_new:brew\x20switch\x20kubernetes\x2dcli\x201\x2e14\x2e0
 SETUVAR _fish_abbr_k_2D_old:brew\x20switch\x20kubernetes\x2dcli\x201\x2e9\x2e6
 SETUVAR _fish_abbr_l:ls

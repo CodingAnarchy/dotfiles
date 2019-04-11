@@ -45,6 +45,7 @@ brew "nvm"
 brew "openssl@1.1"
 brew "pinentry-mac"
 brew "postgresql", restart_service: true
+brew "rbenv"
 brew "redis", restart_service: true
 brew "rsync"
 brew "screen"

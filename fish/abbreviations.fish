@@ -39,3 +39,4 @@ abbr pg 'pgrep -l'
 # Other
 abbr add_to_path 'set -U fish_user_paths $fish_user_paths'
 abbr freebox_mount 'sudo mount -t cifs //mafreebox.freebox.fr/Disque\\ dur /media/freebox -o user=freebox,uid=1000,gid=1000,rw,password='
+abbr speedtest 'curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'

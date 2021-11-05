@@ -6,6 +6,7 @@ abbr a2restart 'sudo service apache2 restart'
 abbr g 'git'
 abbr ga. 'git add .'
 abbr ga 'git add'
+abbr gaa 'git add -A'
 abbr gcm 'git commit -m'
 abbr gco 'git checkout'
 abbr gi 'gitignore'
@@ -17,13 +18,14 @@ abbr gc 'git clone'
 abbr gd 'git diff'
 
 # Kubernetes
-abbr purple 'kubectl config use-context purple.recanary.io-aws'
+abbr k 'kubectl'
 
 # HTTPie
 abbr https 'http --default-scheme=https'
 
 # LS
 abbr l 'ls'
+abbr e 'exa -lFd --group-directories-first'
 
 # NPM
 abbr ni 'npm install --save-dev'
@@ -33,10 +35,6 @@ abbr nl 'npm list'
 abbr nr 'npm remove'
 abbr nu 'npm update'
 
-# PGREP
-abbr pg 'pgrep -l'
-
 # Other
 abbr add_to_path 'set -U fish_user_paths $fish_user_paths'
 abbr freebox_mount 'sudo mount -t cifs //mafreebox.freebox.fr/Disque\\ dur /media/freebox -o user=freebox,uid=1000,gid=1000,rw,password='
-abbr speedtest 'curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'

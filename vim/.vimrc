@@ -34,10 +34,15 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'sjl/gundo.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'ck3g/vim-change-hash-syntax'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-editors/vim-elixir'
-" Plugin 'pangloss/vim-javascript'
 Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'rodjek/vim-puppet'
+Plugin 'hashivim/vim-terraform'
+Plugin 'rainerborene/vim-reek'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'dense-analysis/ale'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -69,8 +74,10 @@ set number "enables line numbering
 set relativenumber "enables relative line numbering
 set shell=bash
 set splitright splitbelow
+set maxmempattern=5000 "don't break syntax highlighting on large base64 values
 let g:rspec_runner = "os_x_iterm"
 let g:jsx_ext_required = 0
+let g:python_recommended_style = 0
 
 " Set up :make to use fish for syntax checking
 autocmd FileType fish compiler fish
@@ -121,3 +128,23 @@ if executable('ag')
   cnoreabbrev Ag Ack
   cnoreabbrev AG Ack
 endif
+
+let g:reek_always_show = 0
+let g:reek_line_limit = 1000
+
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+let g:ruby_indent_assignment_style = "variable"
+
+" Set specific linters
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop', 'sorbet', 'brakeman'],
+\}
+
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
+let g:ale_sign_column_always = 1
+" Disable ALE auto highlights
+let g:ale_set_highlights = 0
+
+let g:airline#extensions#ale#enabled = 1
